@@ -1,6 +1,116 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@mdi/font/css/materialdesignicons.min.css";
+@import "utils/colors";
+@import "utils/reset";
 
-body{
-  border: solid;
+/*************************************
+          Sidebar styling
+ *************************************/
+.sidebar{
+  width: 256px;
+  background: #ffffff;
+  position: fixed;
+  height: 100%;
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
 
+}
+
+.sidebar__header__logo{
+  border-bottom: solid #EBEFF2 1px;
+  padding-left: 30px;
+
+
+  .sidebar__header__logo--text{
+    color: $blue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 55px;
+    font-weight: 500;
+  }
+
+}
+
+.sidebar__user-profile{
+  display: flex;
+  padding: 30px 25px;
+
+  .sidebar__user-profile__account-info{
+    padding: 0 15px;
+  }
+
+  .sidebar__user-profile__img{
+     img{
+       border-radius: 50%;
+       overflow: hidden;
+     }
+  }
+
+  .sidebar__user-profile__account-info__name,
+  .sidebar__user-profile__account-info__email
+  {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 5px;
+    display: block;
+    letter-spacing: 0.05em;
+  }
+
+  .sidebar__user-profile__account-info__email{
+
+    font-size: 11px;
+    line-height: 16px;
+
+    color: #90A0B7;
+
+  }
+
+
+}
+
+
+.sidebar__navigation{
+   padding-left: 15px;
+
+  .sidebar__navigation__links__link{
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #334D6E;
+    display: flex;
+    padding: 7px;
+
+    .sidebar__navigation__links__link__icon{
+      color:  darken(#C2CFE0,8%);
+      font-size: 20px;
+      font-weight: lighter;
+    }
+
+    .sidebar__navigation__links__link__text{
+       padding-bottom: 10px;
+       padding-left: 10px;
+    }
+
+    .sidebar__navigation__links__link__text--settings{
+       padding-bottom: -40;
+    }
+
+  }
+
+  .sidebar__navigation__links__link--active{
+    color: $blue;
+    .sidebar__navigation__links__link__icon{
+      color: $blue;
+    }
+  }
+
+
+  .sidebar__navigation__link__divider{
+    background: #EBEFF2;
+    height: 1px;
+    margin: 20px 0;
+  }
 
 }
