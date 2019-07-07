@@ -3,6 +3,72 @@
 @import "utils/colors";
 @import "utils/reset";
 
+
+/**********************************
+  Header styling
+ **********************************/
+.header{
+  position: relative;
+  margin-left: 256px;
+  background: #ffff;
+  display: flex;
+  padding: 10px 0;
+}
+
+.header__search{
+  width: 95%;
+  position: relative;
+  padding-left: 50px;
+
+  .mdi{
+    color: $grey;
+  }
+
+  .header__search__input{
+    width: 90%;
+    border: none;
+    padding: 8px;
+    font-size: 12px;
+    outline: none;
+    &::placeholder{
+      color:  $grey;
+      letter-spacing: 0.01em;
+    }
+  }
+}
+
+
+.header__notification{
+  position: relative;
+
+  .mdi{
+    font-size: 1.5em;
+    color: $grey;
+  }
+
+
+
+}
+
+.header__notification--has-notification{
+  &:after{
+    content: ' ';
+    display: block;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    background: #F7685B;
+    border-radius: 50%;
+    top: 7px;
+    right: 4px;
+  }
+}
+
+
+
+
+
+
 /*************************************
           Sidebar styling
  *************************************/
@@ -12,9 +78,9 @@
   position: fixed;
   height: 100%;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
-
+  top: 0;
+  left: 0;
 }
-
 .sidebar__header__logo{
   border-bottom: solid #EBEFF2 1px;
   padding-left: 30px;
@@ -93,9 +159,6 @@
        padding-left: 10px;
     }
 
-    .sidebar__navigation__links__link__text--settings{
-       padding-bottom: -40;
-    }
 
   }
 
@@ -114,3 +177,4 @@
   }
 
 }
+
