@@ -1,0 +1,27 @@
+
+/*****************************
+  Bootstrap card overwrite
+********************************/
+
+.card{
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border:none;
+
+  background: #fff;
+
+  .card-header{
+    background: #fff;
+    font-size: .9em;
+    font-weight: 500;
+    color: #334D6E;
+    border-bottom: solid $light-grey 1px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+
+
+
+}
+

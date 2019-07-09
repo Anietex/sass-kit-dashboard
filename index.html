@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Saas  CRM</title>
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="dist/css/app.css">
     <link rel="stylesheet" href="dist/css/home.css">
+
 </head>
 <body>
+<!------ Header Starts ------>
 <header class="header">
     <div class="header__search">
-          <form>
-              <span class="mdi mdi-magnify"></span>
-              <input class="header__search__input" placeholder="Global search">
-          </form>
+        <form>
+            <span class="mdi mdi-magnify"></span>
+            <input class="header__search__input" placeholder="Global search">
+        </form>
     </div>
     <div class="header__notification header__notification--has-notification">
         <span class="mdi mdi-bell-outline"></span>
     </div>
 </header>
-<div class="sidebar">
+<!------/ Header Ends ------>
+
+<!--Sidebar startsPoppins-->
+<aside class="sidebar">
     <header class="sidebar__header">
         <div class="sidebar__header__logo">
             <span class="sidebar__header__logo--text">SaaS Kit</span>
@@ -37,10 +41,10 @@
     <nav class="sidebar__navigation">
         <ul class="list-unstyled sidebar__navigation__links" >
             <li>
-               <a href="#" class="sidebar__navigation__links__link sidebar__navigation__links__link--active">
-                   <span class="mdi mdi-view-dashboard-outline sidebar__navigation__links__link__icon"></span>
-                   <span class="sidebar__navigation__links__link__text">Dashboard</span>
-               </a>
+                <a href="#" class="sidebar__navigation__links__link sidebar__navigation__links__link--active">
+                    <span class="mdi mdi-view-dashboard-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Dashboard</span>
+                </a>
             </li>
 
             <li>
@@ -77,7 +81,7 @@
                     <span class="sidebar__navigation__links__link__text">Deals</span>
                 </a>
             </li>
-          <li class="sidebar__navigation__link__divider"></li>
+            <li class="sidebar__navigation__link__divider"></li>
             <li>
                 <a href="#" class="sidebar__navigation__links__link">
                     <span class="mdi mdi-settings-outline sidebar__navigation__links__link__icon"></span>
@@ -88,8 +92,366 @@
         </ul>
 
     </nav>
-</div>
+</aside>
+<!------/ Sidebar Ends-->
 
 
+
+<!-------  #main ---------->
+<main class="main">
+
+    <!--  .main__wrapper  -->
+    <div class="main__wrapper">
+
+        <!--    .dashboard    -->
+        <div class="dashboard">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <!--       .dashboard__task-card            -->
+                    <div class="card dashboard__task-card">
+                        <div class="card-header d-flex">
+                            <div class="dashboard__card__header__title">
+                                8 task completed out of 10
+                            </div>
+                            <div class="dashboard__card__header_filter ml-auto">
+                                <div class="d-flex">
+                                    <div class="filter-text">
+                                        Show:
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            This week
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">This week</a>
+                                            <a class="dropdown-item" href="#">This Month</a>
+                                            <a class="dropdown-item" href="#">This Year</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="card-body dashboard__card__body">
+                            <div class="dashboard__card__calender">
+                                <div class="dashboard__card__calender__header">
+                                    23 December, Sunday
+                                </div>
+                                <div class="dashboard__card__calender__body">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="dashboard__card__calender__day dashboard__card__calender__day--active">
+                                            <span class="day">Sun</span>
+                                            <span class="date">23</span>
+                                        </div>
+                                        <div class="dashboard__card__calender__day">
+                                            <span class="day">Mon</span>
+                                            <span class="date">24</span>
+                                        </div>
+                                        <div class="dashboard__card__calender__day">
+                                            <span class="day">Tue</span>
+                                            <span class="date">25</span>
+                                        </div>
+                                        <div class="dashboard__card__calender__day">
+                                            <span class="day">Wed</span>
+                                            <span class="date">26</span>
+                                        </div>
+                                        <div class="dashboard__card__calender__day">
+                                            <span class="day">Thu</span>
+                                            <span class="date">27</span>
+                                        </div>
+                                        <div class="dashboard__card__calender__day">
+                                            <span class="day">Fri</span>
+                                            <span class="date">28</span>
+                                        </div>
+                                        <div class="dashboard__card__calender__day">
+                                            <span class="day">Sat</span>
+                                            <span class="date">29</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr/>
+
+                        <div class="dashboard__task-card__tasks">
+                            <div class="card-body dashboard__task">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="dashboard__task__title">
+                                                <p class="title">Send benefit review by Sunday</p>
+                                                <p>
+                                                    <span class="date-text"> Due date:</span>
+                                                    <span class="date"> December 23, 2018</span>
+                                                </p>
+                                            </div>
+                                            <div class="dashboard__task__category">
+                                                Reminder
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="dashboard__task__user d-flex">
+                                                <div class="image">
+                                                    <img src="dist/img/image3.png">
+                                                </div>
+                                                <div class="username">
+                                                    <span>George Fields</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="dashboard__task__actions d-flex">
+                                                <div class="labels">
+                                                    <span class="mdi red mdi-radiobox-blank"></span>
+                                                    <span class="mdi green mdi-radiobox-blank"></span>
+                                                </div>
+                                                <div class="actions">
+                                                    <span class="mdi mdi-pencil"></span>
+                                                    <span class="mdi mdi-delete"></span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge badge-success">Completed</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="card-body dashboard__task">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="dashboard__task__title">
+                                                <p class="title">Send benefit review by Sunday</p>
+                                                <p>
+                                                    <span class="date-text"> Due date:</span>
+                                                    <span class="date"> December 23, 2018</span>
+                                                </p>
+                                            </div>
+                                            <div class="dashboard__task__category">
+                                                Call
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="dashboard__task__user d-flex">
+                                                <div class="image">
+                                                    <img src="dist/img/image3.png">
+                                                </div>
+                                                <div class="username">
+                                                    <span>Rebecca Moore</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="dashboard__task__actions d-flex">
+                                                <div class="labels">
+                                                    <span class="mdi red mdi-radiobox-blank"></span>
+                                                    <span class="mdi green mdi-radiobox-blank"></span>
+                                                </div>
+                                                <div class="actions">
+                                                    <span class="mdi mdi-pencil"></span>
+                                                    <span class="mdi mdi-delete"></span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge badge-danger">Ended</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="card-body dashboard__task">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="dashboard__task__title">
+                                                <p class="title">Send benefit review by Sunday</p>
+                                                <p>
+                                                    <span class="date-text"> Due date:</span>
+                                                    <span class="date"> December 23, 2018</span>
+                                                </p>
+                                            </div>
+                                            <div class="dashboard__task__category">
+                                                Event
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="dashboard__task__user d-flex">
+                                                <div class="image">
+                                                    <img src="dist/img/image3.png">
+                                                </div>
+                                                <div class="username">
+                                                    <span>Lindsey Stroud</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="dashboard__task__actions d-flex">
+                                                <div class="labels">
+                                                    <span class="mdi red mdi-radiobox-blank"></span>
+                                                    <span class="mdi green mdi-radiobox-blank"></span>
+                                                </div>
+                                                <div class="actions">
+                                                    <span class="mdi mdi-pencil"></span>
+                                                    <span class="mdi mdi-delete"></span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge badge-success">Completed</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="dashboard__task-card__footer my-2">
+                            <div class="text-center">
+                                <span class="footer-text"> Show more</span>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>  <!--       .dashboard__task-card            -->
+                </div>
+                <div class="col-lg-5">
+
+                    <!--      .dashboard__deals     -->
+                    <div class="card dashboard__deals">
+
+                        <!--     .card-header            -->
+                        <div class="card-header d-flex">
+                            <div class="dashboard__card__header__title">
+                                Deals
+                            </div>
+                            <div class="dashboard__card__header_filter ml-auto">
+                                <div class="d-flex ">
+                                    <div class="filter-text">
+                                        Show:
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Monthly
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Monthly</a>
+                                            <a class="dropdown-item" href="#">Weekly</a>
+                                            <a class="dropdown-item" href="#">Daily</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   <!--     .card-header            -->
+
+
+                        <div class="card-body">
+
+                            <div class="dashboard__legends">
+                                <div class="dashboard__legend">
+                                    <span class="mdi color-blue mdi-radiobox-blank"></span>
+                                    <span>Closed deals</span>
+                                </div>
+                            </div>
+
+                            <div class="dashboard__deals__chart">
+
+                            </div>
+
+                        </div>
+                    </div>  <!--      .dashboard__deals     -->
+
+
+
+                    <div class="card dashboard__task__summary mt-4">
+                        <!--     .card-header            -->
+                        <div class="card-header d-flex">
+                            <div class="dashboard__card__header__title">
+                                Tasks
+                            </div>
+                            <div class="dashboard__card__header_filter ml-auto">
+                                <div class="d-flex ">
+                                    <div class="filter-text">
+                                        Show:
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            This month
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">This Month</a>
+                                            <a class="dropdown-item" href="#">This Week</a>
+                                            <a class="dropdown-item" href="#">This Year</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   <!--     .card-header   -->
+
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-7">
+
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="d-table">
+                                        <div class="dashboard__legend">
+                                            <span class="mdi color-yellow mdi-radiobox-blank"></span>
+                                            <span>Active</span>
+                                        </div>
+
+                                        <div class="dashboard__legend">
+                                            <span class="mdi color-green  mdi-radiobox-blank"></span>
+                                            <span>Completed</span>
+                                        </div>
+
+
+                                        <div class="dashboard__legend">
+                                            <span class="mdi color-red  mdi-radiobox-blank"></span>
+                                            <span>Ended</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--    .dashboard    -->
+
+    </div><!--  .main__wrapper  -->
+</main> <!-------  #main ---------->
+
+
+
+<script src="dist/js/vendors~app.bundle.js"></script>
+<script src="dist/js/app.bundle.js"></script>
 </body>
 </html>

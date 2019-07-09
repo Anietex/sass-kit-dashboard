@@ -1,2 +1,239 @@
+.color-red {
+  color: #F7685B;
+}
+
+.color-green {
+  color: #2ED47A;
+}
+
+.color-blue {
+  color: #109CF1;
+}
+
+.color-yellow {
+  color: #FFB946;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/dist/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+/********************************
+    Dashboard general styling
+ *******************************/
+.dashboard__legend span {
+  font-size: 10px;
+}
+
+.dashboard__legend span.legend-text {
+  color: #192A3E;
+}
+
+/*****************************************
+    Dashboard task card  section styling
+ ******************************************/
+.dashboard__task-card .card-header {
+  border-bottom: none;
+}
+
+.dashboard__task-card .dashboard__card__body {
+  padding-bottom: 0;
+}
+
+.dashboard__task-card .progress {
+  height: 4px;
+  width: 93%;
+  margin: auto;
+}
+
+.dashboard__task-card .progress .progress-bar {
+  background: #2ED47A;
+}
+
+.dashboard__task-card .dashboard__card__calender__body {
+  padding-top: 50px;
+  padding-bottom: 4px;
+}
+
+.dashboard__task-card .dashboard__card__calender__header {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+}
+
+.dashboard__task-card .dashboard__card__calender__day--active,
+.dashboard__task-card .dashboard__card__calender__day {
+  cursor: pointer;
+}
+
+.dashboard__task-card .dashboard__card__calender__day--active span,
+.dashboard__task-card .dashboard__card__calender__day span {
+  display: block;
+  text-align: center;
+}
+
+.dashboard__task-card .dashboard__card__calender__day--active .day,
+.dashboard__task-card .dashboard__card__calender__day .day {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #93a3b9;
+}
+
+.dashboard__task-card .dashboard__card__calender__day--active .date,
+.dashboard__task-card .dashboard__card__calender__day .date {
+  font-size: 12px;
+  line-height: 18px;
+  color: #4C5862;
+  padding: 4px;
+}
+
+.dashboard__task-card .dashboard__card__calender__day--active:hover .day, .dashboard__task-card .dashboard__card__calender__day--active:hover .date,
+.dashboard__task-card .dashboard__card__calender__day:hover .day,
+.dashboard__task-card .dashboard__card__calender__day:hover .date {
+  color: #109CF1;
+}
+
+.dashboard__task-card .dashboard__card__calender__day--active .date {
+  color: #fff;
+  background: #109CF1;
+  border-radius: 50%;
+}
+
+.dashboard__task-card .dashboard__task-card__footer .footer-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #0d8ddb;
+}
+
+.dashboard__card__header_filter .filter-text, .dashboard__card__header_filter .dropdown-toggle {
+  font-size: 12px;
+}
+
+.dashboard__card__header_filter .filter-text {
+  margin-top: 2px;
+  color: #90A0B7;
+}
+
+.dashboard__card__header_filter .dropdown-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  color: #109CF1;
+  padding-left: 1px;
+}
+
+.dashboard__card__header_filter .dropdown-menu {
+  min-width: 80px;
+}
+
+.dashboard__card__header_filter .dropdown-menu .dropdown-item {
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+}
+
+.dashboard__task {
+  cursor: pointer;
+}
+
+.dashboard__task .dashboard__task__title .title {
+  color: #323C47;
+  font-size: 15px;
+}
+
+.dashboard__task .dashboard__task__title .date-text, .dashboard__task .dashboard__task__title .date {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #62727f;
+}
+
+.dashboard__task .dashboard__task__title .date {
+  color: #4C5862;
+}
+
+.dashboard__task .dashboard__task__category {
+  color: #90A0B7;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.dashboard__task .dashboard__task__user .image img {
+  border-radius: 50%;
+}
+
+.dashboard__task .dashboard__task__user .username {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #707683;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.dashboard__task .dashboard__task__actions .badge {
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff !important;
+  min-width: 100px;
+}
+
+.dashboard__task .dashboard__task__actions .badge-success {
+  color: #2ED47A;
+}
+
+.dashboard__task .dashboard__task__actions .badge-danger {
+  color: #F7685B;
+}
+
+.dashboard__task .dashboard__task__actions .labels, .dashboard__task .dashboard__task__actions .actions {
+  display: none;
+}
+
+.dashboard__task .dashboard__task__actions .labels .mdi {
+  font-size: .8em;
+  font-weight: bolder;
+}
+
+.dashboard__task .dashboard__task__actions .labels .red {
+  color: #FFB946;
+}
+
+.dashboard__task .dashboard__task__actions .labels .green {
+  color: #2ED47A;
+}
+
+.dashboard__task .dashboard__task__actions .actions {
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.dashboard__task .dashboard__task__actions .actions .mdi {
+  color: #C2CFE0;
+  padding: 1px 2px;
+}
+
+.dashboard__task:hover .labels, .dashboard__task:hover .actions {
+  display: block;
+}
+
+/*****************************************
+    Dashboard deals card section styling
+******************************************/
 
 /*# sourceMappingURL=home.css.map */

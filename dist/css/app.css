@@ -9483,6 +9483,27 @@ body, html {
   width: 100%;
   background-color: #F5F6F8;
   position: relative;
+  color: #192A3E;
+}
+
+/*****************************
+  Bootstrap card overwrite
+********************************/
+.card {
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+}
+
+.card .card-header {
+  background: #fff;
+  font-size: .9em;
+  font-weight: 500;
+  color: #334D6E;
+  border-bottom: solid #EBEFF2 1px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 /**********************************
@@ -9551,6 +9572,7 @@ body, html {
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
   top: 0;
   left: 0;
+  z-index: 50000;
 }
 
 .sidebar__header__logo {
@@ -9634,6 +9656,17 @@ body, html {
   background: #EBEFF2;
   height: 1px;
   margin: 20px 0;
+}
+
+/**************************************
+    Main Content style
+ *************************************/
+.main {
+  margin-left: 256px;
+}
+
+.main .main__wrapper {
+  padding: 30px;
 }
 
 /*# sourceMappingURL=app.css.map */

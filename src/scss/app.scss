@@ -1,7 +1,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/@mdi/font/css/materialdesignicons.min.css";
-@import "utils/colors";
+@import "utils/global";
 @import "utils/reset";
+@import "utils/bootstrap-overwrites";
 
 
 /**********************************
@@ -9,7 +10,7 @@
  **********************************/
 .header{
   position: relative;
-  margin-left: 256px;
+  margin-left: $sidebar-width;
   background: #ffff;
   display: flex;
   padding: 10px 0;
@@ -73,13 +74,14 @@
           Sidebar styling
  *************************************/
 .sidebar{
-  width: 256px;
+  width: $sidebar-width;
   background: #ffffff;
   position: fixed;
   height: 100%;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
   top: 0;
   left: 0;
+  z-index: 50000;
 }
 .sidebar__header__logo{
   border-bottom: solid #EBEFF2 1px;
@@ -178,3 +180,14 @@
 
 }
 
+
+/**************************************
+    Main Content style
+ *************************************/
+.main{
+  margin-left: 256px;
+
+  .main__wrapper{
+    padding: 30px;
+  }
+}
