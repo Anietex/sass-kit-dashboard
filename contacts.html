@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;initial=1.0">
+    <title>Saas  CRM | Contacts</title>
+    <link rel="stylesheet" href="dist/css/app.css">
+    <link rel="stylesheet" href="dist/css/contacts.css">
+</head>
+<body>
+<!------ Header Starts ------>
+<header class="header">
+    <div class="header__search">
+        <form>
+            <span class="mdi mdi-magnify"></span>
+            <input class="header__search__input" placeholder="Global search">
+        </form>
+    </div>
+    <div class="header__notification header__notification--has-notification">
+        <span class="mdi mdi-bell-outline"></span>
+    </div>
+</header>
+<!------/ Header Ends ------>
+
+<!--Sidebar startsPoppins-->
+<aside class="sidebar">
+    <header class="sidebar__header">
+        <div class="sidebar__header__logo">
+            <span class="sidebar__header__logo--text">SaaS Kit</span>
+        </div>
+        <div class="sidebar__user-profile">
+            <div class="sidebar__user-profile__img">
+                <img src="/dist/img/lady-avatar.svg" alt="avatar">
+            </div>
+            <div class="sidebar__user-profile__account-info">
+                <span class="sidebar__user-profile__account-info__name">Sierra Ferguson</span>
+                <span class="sidebar__user-profile__account-info__email">s.ferguson@gmail.com</span>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar__navigation">
+        <ul class="list-unstyled sidebar__navigation__links" >
+            <li>
+                <a href="#" class="sidebar__navigation__links__link sidebar__navigation__links__link--active">
+                    <span class="mdi mdi-view-dashboard-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar__navigation__links__link">
+                    <span class="mdi mdi-view-stream sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Task</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar__navigation__links__link">
+                    <span class="mdi mdi-email-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Email</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar__navigation__links__link">
+                    <span class="mdi mdi-account-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Contacts</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar__navigation__links__link ">
+                    <span class="mdi mdi-message-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Chat</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="sidebar__navigation__links__link">
+                    <span class="mdi mdi-card-text-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Deals</span>
+                </a>
+            </li>
+            <li class="sidebar__navigation__link__divider"></li>
+            <li>
+                <a href="#" class="sidebar__navigation__links__link">
+                    <span class="mdi mdi-settings-outline sidebar__navigation__links__link__icon"></span>
+                    <span class="sidebar__navigation__links__link__text">Settings</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</aside>
+<!------/ Sidebar Ends-->
+
+
+
+<!-------  #main ---------->
+<main class="main">
+
+    <!--  .main__wrapper  -->
+    <div class="main__wrapper">
+
+        <!--    .contacts  -->
+        <div class="contacts">
+
+            <!--      .contacts__header      -->
+            <div class="contacts__header mt-2">
+                <div class="d-flex justify-content-between ">
+                    <div class="">
+                        <div class="contacts__filter ml-auto">
+                            <div class="d-flex">
+                                <div class="filter-text">
+                                    Company:
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        All
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">ABC Company</a>
+                                        <a class="dropdown-item" href="#">XYZ Company</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn-primary btn contacts__header__btn">Add Contact</button>
+                    </div>
+                </div>
+            </div> <!--      .contacts__header      -->
+
+
+            <div class="contacts__body mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table contacts-table">
+                            <thead>
+                                <tr>
+                                    <th><input disabled type="checkbox"></th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Company Name</th>
+                                    <th>Role</th>
+                                    <th>Forecast</th>
+                                    <th>Recent Activity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Lindsey Stroud</span>
+                                        </div>
+                                    </th>
+                                    <td>lindsey.stroud@gmail.com</td>
+                                    <td>Hatchbuck</td>
+                                    <td>Manager</td>
+                                    <td>50 %</td>
+                                    <td>5 Minutes ago</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Nicci Troiani</span>
+                                        </div>
+                                    </th>
+                                    <td>lnicci.troiani@gmail.com</td>
+                                    <td>Slack</td>
+                                    <td>Manager</td>
+                                    <td>75 % %</td>
+                                    <td>14 Minutes ago</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">George Fields</span>
+                                        </div>
+                                    </th>
+                                    <td>lgeorge.fields@gmail.com</td>
+                                    <td>Clockify</td>
+                                    <td>CEO</td>
+                                    <td>10 %</td>
+                                    <td>6 Hours ago</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Rebecca Moore</span>
+                                        </div>
+                                    </th>
+                                    <td>rebecca.moore@gmail.com</td>
+                                    <td>Upwork</td>
+                                    <td>Manager</td>
+                                    <td>25 %</td>
+                                    <td>Dec 14, 2018</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Jane Doe</span>
+                                        </div>
+                                    </th>
+                                    <td>jane.doe@gmail.com</td>
+                                    <td>Trello</td>
+                                    <td>Engineer</td>
+                                    <td>30 %</td>
+                                    <td>Dec 12, 2018</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Jones Dermot</span>
+                                        </div>
+                                    </th>
+                                    <td>dermot.jones@gmail.com</td>
+                                    <td>Slack</td>
+                                    <td>Developer</td>
+                                    <td>40 %/td>
+                                    <td>Dec 11, 2018</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Martin Merces</span>
+                                        </div>
+                                    </th>
+                                    <td>martin.merces@gmail.com</td>
+                                    <td>Google</td>
+                                    <td>Manager</td>
+                                    <td>60 %</td>
+                                    <td>Dec 9, 2018</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Franz Ferdinand</span>
+                                        </div>
+                                    </th>
+                                    <td>franz.ferdiand@gmail.com</td>
+                                    <td>Facebook</td>
+                                    <td>Manager</td>
+                                    <td>100 %</td>
+                                    <td>Dec 6, 2018</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">John Smith</span>
+                                        </div>
+                                    </th>
+                                    <td>john.smith@gmail.com</td>
+                                    <td>Skype</td>
+                                    <td>CEO</td>
+                                    <td>75 %</td>
+                                    <td>Nov 30, 2018</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <th>
+                                        <div class="contacts-table__user-profile">
+                                            <img class="img" src="/dist/img/image3.png">
+                                            <span class="name">Judith Williams</span>
+                                        </div>
+                                    </th>
+                                    <td>judith.williams@gmail.com</td>
+                                    <td>Google</td>
+                                    <td>Designer</td>
+                                    <td>45 %</td>
+                                    <td>Nov 26, 2018</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> <!--    .contacts  -->
+
+
+
+    </div><!--  .main__wrapper  -->
+</main> <!-------  #main ---------->
+
+
+
+<script src="dist/js/vendors~app.bundle.js"></script>
+<script src="dist/js/app.bundle.js"></script>
+</body>
+</html>

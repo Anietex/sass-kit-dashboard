@@ -1,0 +1,79 @@
+@import "utils/global";
+@import "utils/fonts";
+
+.contacts{
+
+
+  .contacts__filter{
+    .filter-text,.dropdown-toggle{
+      font-size: 12px;
+    }
+    .filter-text{
+      margin-top: 5px;
+      color: $grey;
+    }
+
+    .dropdown-toggle{
+      background: none;
+      border: none;
+      outline: none;
+      color: $blue;
+      padding-left: 1px;
+
+    }
+
+    .dropdown-menu{
+      min-width: 80px;
+
+      .dropdown-item{
+        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: none;
+      }
+    }
+
+  }
+
+
+  .contacts__header__btn{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    padding: 12px 35px;
+    background: $blue;
+    border: $blue;
+    &:focus{
+      box-shadow: none;
+    }
+
+  }
+}
+
+
+.table{
+
+  .contacts-table__user-profile{
+
+    img{
+      border-radius: 50%;
+    }
+
+    .name{
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      color:$text-color;
+      margin-top: 80px;
+    }
+  }
+
+
+}
