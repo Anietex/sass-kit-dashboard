@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run sass | npm run start:dev",
-    "start:dev": "live-server",
+    "start:dev": "live-server --ignore=src",
     "sass": "node-sass  --output-style expanded --source-map true src/scss -o dist/css -r -w "
   },
   "keywords": [],

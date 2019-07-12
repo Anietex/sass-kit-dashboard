@@ -1,0 +1,82 @@
+.color-red {
+  color: #F7685B;
+}
+
+.color-green {
+  color: #2ED47A;
+}
+
+.color-blue {
+  color: #109CF1;
+}
+
+.color-yellow {
+  color: #FFB946;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/dist/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+.contacts .contacts__filter .filter-text, .contacts .contacts__filter .dropdown-toggle {
+  font-size: 12px;
+}
+
+.contacts .contacts__filter .filter-text {
+  margin-top: 5px;
+  color: #90A0B7;
+}
+
+.contacts .contacts__filter .dropdown-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  color: #109CF1;
+  padding-left: 1px;
+}
+
+.contacts .contacts__filter .dropdown-menu {
+  min-width: 80px;
+}
+
+.contacts .contacts__filter .dropdown-menu .dropdown-item {
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+}
+
+.contacts .contacts__header__btn {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  padding: 12px 35px;
+  background: #109CF1;
+  border: #109CF1;
+}
+
+.contacts .contacts__header__btn:focus {
+  box-shadow: none;
+}
+
+.table .contacts-table__user-profile img {
+  border-radius: 50%;
+}
+
+.table .contacts-table__user-profile .name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #192A3E;
+  margin-top: 80px;
+}
+
+/*# sourceMappingURL=contacts.css.map */

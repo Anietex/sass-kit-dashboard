@@ -142,7 +142,8 @@
 .sidebar__navigation{
    padding-left: 15px;
 
-  .sidebar__navigation__links__link{
+  .sidebar__navigation__links__link,
+  .sidebar__footer__toggle-btn{
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.01em;
@@ -150,13 +151,17 @@
     display: flex;
     padding: 7px;
 
-    .sidebar__navigation__links__link__icon{
+    .sidebar__navigation__links__link__icon,
+    .sidebar__footer__toggle-btn__icon
+    {
       color:  darken(#C2CFE0,8%);
       font-size: 20px;
       font-weight: lighter;
     }
 
-    .sidebar__navigation__links__link__text{
+    .sidebar__navigation__links__link__text,
+    .sidebar__footer__toggle-btn__text
+    {
        padding-bottom: 10px;
        padding-left: 10px;
     }
@@ -178,16 +183,62 @@
     margin: 20px 0;
   }
 
+
 }
+
+
+.sidebar__footer{
+  position: absolute;
+  bottom: 0;
+}
+
+
 
 
 /**************************************
     Main Content style
  *************************************/
 .main{
-  margin-left: 256px;
+  margin-left: $sidebar-width;
 
   .main__wrapper{
     padding: 30px;
   }
+}
+
+
+
+
+/*************************************
+Collapsed sidebar styling
+**************************************/
+
+.sidebar--collapsed{
+  .header,.main{
+    margin-left: $collapsed-sidebar-width;
+  }
+
+
+  .sidebar{
+    width: $collapsed-sidebar-width;
+    .sidebar__header__logo{
+      padding-left: 10px;
+      .kit{
+        display: none;
+      }
+    }
+    .sidebar__user-profile{
+      padding-left: 10px;
+    }
+
+
+
+    .sidebar__navigation__links__link__text,
+    .sidebar__user-profile__account-info,
+    .sidebar__footer__toggle-btn__text
+    {
+      display: none;
+    }
+  }
+
 }

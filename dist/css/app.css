@@ -9700,7 +9700,8 @@ body, html {
   padding-left: 15px;
 }
 
-.sidebar__navigation .sidebar__navigation__links__link {
+.sidebar__navigation .sidebar__navigation__links__link,
+.sidebar__navigation .sidebar__footer__toggle-btn {
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.01em;
@@ -9709,13 +9710,19 @@ body, html {
   padding: 7px;
 }
 
-.sidebar__navigation .sidebar__navigation__links__link .sidebar__navigation__links__link__icon {
+.sidebar__navigation .sidebar__navigation__links__link .sidebar__navigation__links__link__icon,
+.sidebar__navigation .sidebar__navigation__links__link .sidebar__footer__toggle-btn__icon,
+.sidebar__navigation .sidebar__footer__toggle-btn .sidebar__navigation__links__link__icon,
+.sidebar__navigation .sidebar__footer__toggle-btn .sidebar__footer__toggle-btn__icon {
   color: #a7bad2;
   font-size: 20px;
   font-weight: lighter;
 }
 
-.sidebar__navigation .sidebar__navigation__links__link .sidebar__navigation__links__link__text {
+.sidebar__navigation .sidebar__navigation__links__link .sidebar__navigation__links__link__text,
+.sidebar__navigation .sidebar__navigation__links__link .sidebar__footer__toggle-btn__text,
+.sidebar__navigation .sidebar__footer__toggle-btn .sidebar__navigation__links__link__text,
+.sidebar__navigation .sidebar__footer__toggle-btn .sidebar__footer__toggle-btn__text {
   padding-bottom: 10px;
   padding-left: 10px;
 }
@@ -9734,6 +9741,11 @@ body, html {
   margin: 20px 0;
 }
 
+.sidebar__footer {
+  position: absolute;
+  bottom: 0;
+}
+
 /**************************************
     Main Content style
  *************************************/
@@ -9743,6 +9755,35 @@ body, html {
 
 .main .main__wrapper {
   padding: 30px;
+}
+
+/*************************************
+Collapsed sidebar styling
+**************************************/
+.sidebar--collapsed .header, .sidebar--collapsed .main {
+  margin-left: 68px;
+}
+
+.sidebar--collapsed .sidebar {
+  width: 68px;
+}
+
+.sidebar--collapsed .sidebar .sidebar__header__logo {
+  padding-left: 10px;
+}
+
+.sidebar--collapsed .sidebar .sidebar__header__logo .kit {
+  display: none;
+}
+
+.sidebar--collapsed .sidebar .sidebar__user-profile {
+  padding-left: 10px;
+}
+
+.sidebar--collapsed .sidebar .sidebar__navigation__links__link__text,
+.sidebar--collapsed .sidebar .sidebar__user-profile__account-info,
+.sidebar--collapsed .sidebar .sidebar__footer__toggle-btn__text {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */
